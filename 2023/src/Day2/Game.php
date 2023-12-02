@@ -11,7 +11,6 @@ class Game
     function __construct($id,$sets) {
         $this->id = $id;
         $this->sets = $sets;
-        //$this->debug_to_console($sets);
     }
 
     public static function create(string $row){
@@ -66,22 +65,6 @@ class Game
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * @return array
-     */
-    public function getSets(): string
-    {
-        return $this->sets;
-    }
-
-    public function debug_to_console($data) {
-        $output = $data;
-        if (is_array($output))
-            $output = implode(',', $output);
-
-        echo "$output";
     }
 
     public function getPowerofGame():int{

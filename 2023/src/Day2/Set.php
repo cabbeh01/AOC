@@ -42,8 +42,4 @@ class Set
     {
         return $this->red;
     }
-
-    public function __toString() {
-        return "Red: " . $this->red ;
-    }
 }
